@@ -1,5 +1,5 @@
 #!/bin/bash
 cd /home/ubuntu/flickr-backend
-tsc
+yarn build
 yarn clean
 yarn live
