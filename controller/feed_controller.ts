@@ -8,7 +8,7 @@ const fetch = (url: RequestInfo, init?: RequestInit) =>  import("node-fetch").th
 export const get_public_feed = async (req: Request, res: Response) => {
 
     try {
-        const response = await fetch('https://www.flickr.com/services/feeds/photos_public.gne?format=json', {
+        const response = await fetch(`https://www.flickr.com/services/feeds/photos_public.gne?format=json&tags=${req.query.tags}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
