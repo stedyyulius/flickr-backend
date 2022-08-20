@@ -1,0 +1,4 @@
+#!/bin/bash
+cd /home/ubuntu/flickr-backend
+yarn clean
+yarn live

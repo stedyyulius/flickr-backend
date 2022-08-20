@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.json({ limit: '50mb' }));
 app.use(express.urlencoded({ extended: true, limit: '50mb' }));
 
-app.get('/api', (req: Request, res: Response) => res.send('connected'));
+app.get('/api', (req: Request, res: Response) => res.send('connected succesfully'));
 
 app.use('/api/feed', feed_router);
 

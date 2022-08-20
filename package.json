@@ -10,7 +10,7 @@
     "live": "pm2 start ./.build/app.js --name=flickr",
     "clean": "pm2 delete flickr",
     "restart": "tsc & pm2 restart flickr",
-    "list": "pm2 list"
+    "pmlist": "pm2 list"
   },
   "author": "",
   "license": "ISC",
